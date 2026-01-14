@@ -1,0 +1,221 @@
+/* ----------------------------- */
+/* RESET & BASE STYLES */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* ----------------------------- */
+/* NAVBAR */
+/* ----------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+nav h1 {
+  color: #1a73e8; /* primary color */
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+/* ----------------------------- */
+/* BUTTONS */
+/* ----------------------------- */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #155ab6;
+}
+
+.btn-accent {
+  background-color: #f57c00;
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #c75c00;
+}
+
+/* ----------------------------- */
+/* HERO SECTION (HOME PAGE) */
+/* ----------------------------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.hero .text {
+  flex: 1 1 400px;
+}
+
+.hero .text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1a73e8;
+}
+
+.hero .text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero .image {
+  flex: 1 1 400px;
+}
+
+.hero .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ----------------------------- */
+/* FORMS (LOGIN/REGISTER/ADMIN) */
+/* ----------------------------- */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* ----------------------------- */
+/* PROPERTY CARDS */
+/* ----------------------------- */
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #f9f9f9;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.property-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 15px 5px;
+  color: #1a73e8;
+}
+
+.property-card p {
+  font-size: 1rem;
+  margin: 5px 15px;
+  color: #555;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ----------------------------- */
+/* RESPONSIVE STYLES */
+/* ----------------------------- */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero .text p {
+    font-size: 1rem;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero .text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero .text p {
+    font-size: 0.95rem;
+  }
+}

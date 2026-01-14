@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties - Ahaba Lands</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="container">
+    <h1 class="primary">Ahaba Lands</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="container" style="margin-top:50px;">
+    <h2 style="text-align:center; margin-bottom:30px;">Available Lands</h2>
+
+    <div id="propertyList" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
+      <!-- Properties will go here -->
+      <div class="property-card">
+        <img src="assets/images/1.jpg" alt="Land" style="width:100%; border-radius:8px;">
+        <h3>Sample Land</h3>
+        <p>Location: Abuja</p>
+        <p>Price: ₦5,000,000</p>
+        <a href="property-details.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

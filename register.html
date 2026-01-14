@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Ahaba Lands</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="container">
+    <h1 class="primary">Ahaba Lands</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="properties.html">Properties</a></li>
+    </ul>
+  </nav>
+
+  <section class="container" style="max-width:400px; margin-top:80px;">
+    <h2 style="text-align:center; margin-bottom:30px;">Create a New Account</h2>
+
+    <form id="registerForm" style="display:flex; flex-direction:column; gap:15px;">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <button type="submit" class="btn btn-accent">Register</button>
+    </form>
+
+    <p style="text-align:center; margin-top:15px;">
+      Already have an account? <a href="login.html" class="primary">Login</a>
+    </p>
+  </section>
+
+  <script src="js/auth.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
