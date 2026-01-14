@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://ahaba-landhub.onrender.com";
 
 // REGISTER
 const registerForm = document.getElementById("registerForm");
